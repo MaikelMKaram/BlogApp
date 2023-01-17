@@ -12,8 +12,7 @@ class HelloController {
         return "Hello from Spring!";
     }
 
-    //Spring allows us to use path variables, that is, variables that are part of the URI of a request, as opposed to being passed as a query string, or as part of the request body. Here is an example of a method that uses a path variable:
-    // whatever string gets passed into the {name} in link will be the name string variable'
+    //Spring allows us to use path variables, that is, variables that are part of the URI of a request, as opposed to being passed as a query string, or as part of the request body. Here is an example of a method that uses a path variable. Whatever string gets passed into the {name} in link will be the name string variable'
     @GetMapping("/hello/{name}")
     @ResponseBody
     public String sayHello(@PathVariable String name) {
