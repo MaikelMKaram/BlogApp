@@ -1,4 +1,4 @@
-package com.example.blogappjavacohort;
+package com.example.blogappjavacohort.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
