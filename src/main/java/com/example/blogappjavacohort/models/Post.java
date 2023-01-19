@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "posts")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,15 +20,14 @@ import javax.persistence.*;
 
 public class Post {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 50)
     private String title;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 200)
     private String body;
 
     @OneToOne
@@ -40,7 +40,7 @@ public class Post {
     }
 
     public Post(String title, String body) {
-        this.title = title;
+        this.title =itle;
         this.body = body;
     }
 

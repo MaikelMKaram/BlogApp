@@ -64,5 +64,6 @@ public class PostController {
         model.addAttribute("n", n);
         return "check";
     }
+    //============= View exercise 1 completed =================//
 
 }
